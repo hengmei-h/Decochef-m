@@ -1,0 +1,133 @@
+
+
+body{
+   height:100%;
+   display:table;
+   width:100%;
+   text-align:center;
+}
+
+.retable_center{
+  display:table-cell;
+  vertical-align: middle;
+}
+.redrop-down{
+    display: inline-block;
+    position: relative;
+}
+
+.redrop-down__button{
+  background: linear-gradient(to right,#3d6def, #8FADFE);
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 18px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.redrop-down__name {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.redrop-down__menu-box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 4px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+     transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+ visibility: hidden;
+opacity: 0;
+  margin-top: 5px;
+}
+
+.redrop-down__menu {
+    margin: 0;
+    padding: 0 13px;
+    list-style: none;
+  
+}
+.redrop-down__menu-box:before{
+  content:'';
+  background-color: transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  border-top: 8px solid transparent;
+  top: -15px;
+  right: 18px;
+
+}
+
+.redrop-down__menu-box:after{
+  content:'';
+  background-color: transparent;
+}
+
+.redrop-down__item {
+    font-size: 13px;
+    padding: 13px 0;
+    text-align: left;
+    font-weight: 500;
+    color: #909dc2;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #e0e2e9;
+}
+
+.redrop-down__item-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0px;
+    fill: #8995b6;
+  
+}
+
+.redrop-down__item:hover .redrop-down__item-icon{
+  fill: #3d6def;
+}
+
+.redrop-down__item:hover{
+  color: #3d6def;
+}
+
+
+
+.redrop-down__item:last-of-type{
+  border-bottom: 0;
+}
+
+
+.redrop-down--active .redrop-down__menu-box{
+visibility: visible;
+opacity: 1;
+  margin-top: 15px;
+}
+
+.redrop-down__item:before{
+  content:'';
+  position: absolute;
+width: 3px;
+height: 28px;
+background-color: #3d6def;
+left: -13px;
+top: 50%;
+transform: translateY(-50%);
+  display:none;
+}
+
+.redrop-down__item:hover:before{
+  display:block;
+}

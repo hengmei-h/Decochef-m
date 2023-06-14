@@ -1,0 +1,7 @@
+  value="<?= empty($_POST['receiver']) ? '' : htmlentities($_POST['receiver']) ?>" required
+   <div class="form-text"><?= empty($_POST['receiver']) ? '' : htmlentities($_POST['receiver']) ?></div>
+    value="<?= empty($_POST['content']) ? '' : htmlentities($_POST['content']) ?>" required
+    <div class="form-text"><?= empty($_POST['content']) ? '' : htmlentities($_POST['content']) ?></div>
+
+
+    onclick="addToStick(event)"

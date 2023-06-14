@@ -1,0 +1,460 @@
+/* section1-課程資訊 ---------------------------------------*/
+
+.class_intro {
+  /* margin:100px 0 100px; */
+  padding: 150px 0 100px;
+}
+
+.title_all {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+.title_h4 {
+  color: #856252;
+}
+.class_title {
+  background-color: rgba(203, 172, 141, 1);
+  padding: 10px;
+  border-radius: 50px;
+}
+.class_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+/* .food_pic{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+} */
+.text span{
+  font-size: 20px;
+}
+
+.food_img {
+  width: 500px;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-right: 100px;
+}
+.food_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn5 {
+  border: 2px solid #cbac8d;
+}
+.food_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 470px;
+  margin: 10px;
+}
+
+.star_icon{
+  font-size: 20px;
+  color: #edc26c;
+}
+
+.heart_icon{
+  font-size: 20px;
+  color: #a24d38;
+}
+
+.class_cart{
+  cursor: pointer;
+}
+
+
+.class_content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media (max-width: 375px) {
+  .class_intro {
+    /* margin:100px 0 50px; */
+    padding: 100px 0 50px;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    /* margin:0px 0px 30px; */
+  }
+  .class_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .food_img {
+    width: 325px;
+    height: 258px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 0px;
+  }
+  .food_icon {
+    width: 300px;
+    margin: 10px;
+  }
+  .class_content .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 325px;
+  }
+
+  .class_content .text h5 {
+    margin-bottom: 20px;
+  }
+  .btn5 {
+    margin-top: 30px;
+  }
+  .btn-ll{
+    height: 48px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+  }
+}
+/* section2-師資介紹 -----------------------------------------*/
+.teacher {
+  background: url(../imgs/class2/class_bg.png) no-repeat;
+  height: 100vh;
+  padding: 150px 0;
+}
+
+.teach_btnn {
+  display: flex;
+  justify-content: baseline;
+
+}
+.tcBtn__teacher:hover{
+  box-shadow: #856252;
+}
+
+.tcBtn {
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  color: #ffffff;
+  background-color: #a24d38;
+  cursor: pointer;
+}
+.tcBtn:hover{
+  box-shadow:0px 0px 25px #cbac8d;
+  cursor: pointer;
+
+}
+
+.tcBtn__active {
+  color: #a24d38;
+  background-color: #f1ece6;
+}
+
+.primary-light {
+  color: #a24d38;
+}
+
+.teachabout {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.classabout {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  border-radius: 50px;
+}
+.hidden {
+  display: none !important;
+}
+.teachimg, .classaboutimg {
+  width: 370px;
+  height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.teachimg img, .classaboutimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teachintro ,.classaboutintro {
+  width: 436px;
+  margin-top: 20px;
+  line-height: 2rem;
+}
+@media (max-width: 375px) {
+  .teacher {
+    background: url(../imgs/class2/class_bg.png) no-repeat;
+    height: 150vh;
+    padding: 50px 0;
+  }
+  .teach_btnn {
+    display: flex;
+    justify-content: center;
+  }
+  .teachabout ,.classabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  .teachimg,.classaboutimg {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .teachintro,.classaboutintro {
+    width: 300px;
+    margin-top: 20px;
+    line-height: 2rem;
+  }
+}
+
+/* section3-goodMessage名人推薦------------------------------ */
+.goodMessage {
+  background: url(../imgs/class2/goodMessage.jpg) 0 0 no-repeat;
+  height: 750px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.bigtitle {
+  text-align: center;
+  color: #a24d38;
+}
+
+.goodcontent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 220px;
+}
+
+/* 名人留言動畫卡 */
+.poCard {
+  background-color: #f0d59d;
+  border:3px solid  #fafaf97c ;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: calc(20%-20px); */
+  width: 18%;
+  padding: 20px 20px;
+  min-width: 200px;
+  height: 90px;
+  margin: 20px 10px;
+  cursor: pointer;
+  /* animation-name: row1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    transform: translateX(100px); */
+}
+.poimgs {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  overflow: hidden;
+  /* margin-right: 20px; */
+}
+.poimgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.potext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.potext .pm {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 auto;
+  min-width: 300px;
+}
+.poCard:nth-child(1),
+.poCard:nth-child(2),
+.poCard:nth-child(3),
+.poCard:nth-child(4),
+.poCard:nth-child(5) {
+  /* animation-name: row1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; */
+  animation: row1 15s infinite;
+  
+  /* transform: translateX(-50px); */
+}
+.poCard:nth-child(6),
+.poCard:nth-child(7),
+.poCard:nth-child(8),
+.poCard:nth-child(9),
+.poCard:nth-child(10) {
+  /* animation-name: row1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s; */
+  animation: row1 15s 0.3s infinite;
+  /* transform: translateX(100px); */
+}
+
+@keyframes row1 {
+  0% {
+    transform: translateX(600%);
+  }
+  100% {
+    transform: translateX(-600%);
+  }
+}
+
+/* 邊框卡 */
+.border-image-example {
+  /* 設定圖片路徑 */
+  /* border-image-source: url("/imgs/class2/Union.png"); */
+  /* 設定圖片邊框寬度 */
+  border-image-width: 2180px;
+  /* 設定邊框圖片裁切方式 */
+  border-image-slice: 30%;
+  /* 設定邊框圖片填充方式 */
+  border-image-repeat: stretch;
+}
+@media (max-width: 375px) {
+  .goodMessage{
+    background: url(../imgs/class2/goodMessage_iphone.jpg)0 0 no-repeat;
+    height: 520px;
+    margin-top:0x;
+    overflow: hidden;
+  }
+  .bigtitle{
+    padding-top:40px;
+  }
+  .goodcontent {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    margin-top:150px;
+  }
+  .poCard {
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    padding: 20px 20px;
+    min-width: 300px;
+    height: 90px;
+    margin: 20px 20px;
+  }
+}
+
+
+/* section4-aboutClass相關課程----------------------------- */
+.aboutClass {
+  margin: 100px 0;
+}
+.abcontent {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 300px 0px;
+}
+
+.abimg {
+  width: 250px;
+  height: 170px;
+  overflow: hidden;
+}
+.abimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.abtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding-left: 10px;
+}
+
+.abtext .btn2 {
+  width: 32px;
+}
+
+.aboutClass_carousel-indicators{
+  display: none;
+}
+
+.carousel-bullet{
+  padding: 0px 10px;
+}
+.abCardinput {
+  display: none;
+}
+.abCard{
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .aboutClass {
+    margin: 50px 0 150px;
+  }
+ 
+  .abcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 0px;
+  }
+  .abCard {
+    display: none; /* 將所有 abCard 隱藏 */
+    margin-top: 50px;
+  }
+  .aboutClass_carousel-indicators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
+  
+  .carousel-bullet{
+    padding: 0px 10px;
+  }
+  .carousel-bullet:hover{
+    color: #aaaaaa;
+  }
+  .abCardinput {
+    display: none;
+  }
+  
+  .abCard__active {
+    display: block;
+  }
+  
+}

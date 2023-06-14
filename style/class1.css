@@ -1,0 +1,658 @@
+/* section1-kv主視覺------------------------------ */
+.bgcontainer {
+  position: relative;
+  width:100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.bgcontainer:before, .bgcontainer:after, .bgcontainer span:first-child:before, .bgcontainer span:first-child:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade-out 16s linear infinite;
+}
+
+/* .bgcontainer:before {
+  background-image: url("../imgs/class1/classKv_1.jpg");
+  animation-delay: 1s;
+} */
+
+/* .bgcontainer:after {
+  background-image: url("../imgs/class1/classKv_2.jpg");
+  animation-delay: 4s;
+}
+
+.bgcontainer span:first-child:before {
+  background-image: url("../imgs/class1/classKv_3.jpg");
+  animation-delay: 7s;
+}
+
+.bgcontainer span:first-child:after {
+  background-image: url("../imgs/class1/classKv_4.jpg");
+  animation-delay: 10s;
+} */
+
+@keyframes fade-out {
+  0%{
+    opacity: 0;
+    animation-timing-function: ease-in;
+  background-image: url("../imgs/class1/classKv_1.jpg");
+  }
+  6.25% { 
+    opacity: 1;
+    transform: scale(1.05);
+    /* animation-timing-function: ease-out; */
+  }
+  12.5%{
+    opacity: 1;
+    transform: scale(1.1);   
+  }
+  25%{
+    opacity: 0;
+    transform: scale(1.1); 
+  background-image: url("../imgs/class1/classKv_1.jpg");
+  animation-timing-function: ease-out;
+  }
+  26% {
+    transform: scale(1); 
+    opacity: 0;
+    animation-timing-function: ease-in;
+    background-image: url("../imgs/class1/classKv_2.jpg");
+  }
+  32.25% { 
+    opacity: 1;
+    transform: scale(1.05);
+    /* animation-timing-function: ease-out; */
+  }
+  38.5%{
+    opacity: 1;
+    transform: scale(1.1);   
+  }
+  50%{
+    opacity: 0;
+    transform: scale(1.1); 
+    background-image: url("../imgs/class1/classKv_2.jpg");
+    animation-timing-function: ease-out;
+  }
+  51% {
+    transform: scale(1); 
+    opacity: 0;
+    animation-timing-function: ease-in;
+  background-image: url("../imgs/class1/classKv_3.jpg");
+
+  }
+  
+  57.25% { 
+    opacity: 1;
+    transform: scale(1.05);
+    /* animation-timing-function: ease-out; */
+  }
+ 62.5%{
+    opacity: 1;
+    transform: scale(1.1);   
+  }
+  75%{
+    opacity: 1;
+    transform: scale(1.1); 
+    background-image: url("../imgs/class1/classKv_3.jpg");
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: scale(1); 
+    opacity: 0;
+    animation-timing-function: ease-in;
+    background-image: url("../imgs/class1/classKv_4.jpg");
+  }
+  
+  82.25% { 
+    opacity: 1;
+    transform: scale(1.05);
+    /* animation-timing-function: ease-out; */
+  }
+  87.5%{
+    opacity: 1;
+    transform: scale(1.1);   
+  }
+  99%{
+    opacity: 1;
+    background-image: url("../imgs/class1/classKv_4.jpg");
+    transform: scale(1.1); 
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1); 
+    opacity: 0;
+    animation-timing-function: ease-in;
+    background-image: url("../imgs/class1/classKv_1.jpg");
+  }
+}
+
+/* @keyframes fade-out {
+  0%{
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  6.25% { 
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out;}
+  12.5%{
+    opacity: 1;
+    transform: scale(1.1);   
+  }
+  25%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+  }
+} */
+
+
+/* chatgpt以上----------------- */
+
+@media (max-width: 375px) {
+  .bgcontainer{
+    background-size: contain;
+    background-position: top;
+    height:210px;
+    margin-top:50px;
+  }
+}
+
+/* section2-popular_class本月推薦------------------- */
+.popular_class {
+  padding: 100px 0px;
+  width: 1096px;
+  /* height: 100%; */
+  margin: auto;
+}
+
+.class_text {
+  text-align: center;
+  color: #856252;
+  margin-bottom: 30px;
+}
+.container_poCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/*  排行榜卡片 */
+.poCard {
+  position: relative;
+  width: calc(33% - 120px);
+  height: 150px;
+  margin: 60px;
+   ;
+}
+.poimgs {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow:-10px 10px 50px #856252;
+}
+.poimgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.poCard:hover{
+  opacity: 0.5;
+}
+
+.poCard:hover .poimgs{
+  box-shadow: 0px 0px 25px #CBAC8D;
+}
+
+
+.potext {
+  /* background-color: #aaaaaab7; */
+  background-color:  #cbac8da6;
+  border-radius: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  position: absolute;
+  left: 100px;
+  bottom: -50px;
+  transform: translateX(-25px);
+}
+.potext{
+  text-shadow:5px 0px 20px #aa3312;
+}
+
+.potext .pm {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+.poCard:nth-child(1),
+.poCard:nth-child(2),
+.poCard:nth-child(3) {
+  /* /* animation-name: row1;
+  animation-duration: 30s;
+  animation-iteration-count: infinite; */
+  transform: translateX(-100px);
+}
+
+.poCard:nth-child(4),
+.poCard:nth-child(5),
+.poCard:nth-child(6) {
+  /* animation-name: row1;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s; */
+  transform: translateX(100px);
+}
+
+/* @keyframes row1 {
+  0% {
+    transform: translateX(600%);
+  }
+  100%{
+    transform: translateX(-600%);
+  }
+} */
+
+@media (max-width: 375px) {
+  .popular_class {
+    margin:0px 0;
+    width: 375px;
+    padding: 40px 0;
+  }
+  .content_poCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 0px;
+  }
+  .poCard {
+    display: none; /* 將所有 abCard 隱藏 */
+  }
+.poCard:nth-child(4),
+.poCard:nth-child(5),
+.poCard:nth-child(6){
+  
+  transform: translateX(-100px);
+}
+
+  /* 以下只顯示第一個 abCard */
+  /* .poCard:first-child {
+    display: block;
+    margin: 30px 150px;
+  } */
+  .potext {
+    background-color:  #aaaaaab7;
+    border-radius: 80px;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    position: absolute;
+    left: 65px;
+    bottom: -57px;
+    transform: translateX(0px);
+  }
+
+  .potext .pm {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+
+}
+
+  /* top-6 排名點擊--  */
+
+.poCardinput {
+  display: none;
+}
+
+.poCard__active {
+  display: block;
+}
+.carousel-indicators{
+  display:none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.carousel-bullet{
+  margin: 10px;
+}
+@media (max-width: 375px) {
+  .poCard__active {
+    display: block;
+    margin: 30px 150px;
+  }
+ .carousel-indicators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-bullet{
+    margin: 10px;
+  }
+  .carousel-bullet:hover{
+    color: #aaaaaa;
+  }
+}
+
+
+
+
+/* section3-class課程表 ------------------------------*/
+.class{
+  width: 100%;
+  background-color: #f1ece6;
+  padding-top: 30px;
+}
+.class_container {
+  height: 100%;
+  margin: 0px 206px;
+}
+
+/* btn列 */
+
+.titlebtnAll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.btntitle3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btntitle {
+  margin-right: 100px;
+  background-color: #a24d38;
+  width: 164px;
+  padding: 10px 0px;
+  border-radius: 50px;
+}
+.btntitle:hover, .btntitle.active{
+  /* margin-right: 100px; */
+  background-color: #541e11;
+  /* width: 164px;
+  padding: 10px 0px;
+  border-radius: 50px; */
+}
+.btntitle h5 {
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .class_container {
+    /* padding: 0px 0px; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin:0;
+  }
+
+
+  .titlebtnAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px 0px;
+    height: 120px;
+  }
+  .btntitle {
+    margin-right: 10px;
+    background-color: #a24d38;
+    width: 90px;
+    padding: 10px 0px;
+    border-radius: 50px;
+  }
+}
+/* 搜尋input */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none ;
+}
+
+.search-button {
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #cbac8d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #856252;
+}
+@media (max-width: 375px) {
+  .search-input {
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+  }
+  .search-button {
+    height: 40px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #cbac8d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* 課程卡片 */
+
+.class_content {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.classCard {
+  position: relative;
+  /* width: calc(22% -90px); */
+  width: 30%;
+  height: 200px;
+  margin: 80px 0px;
+}
+.classimgs {
+  width: 380px;
+  height: 210px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.classimgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.classCard:hover .classimgs img{
+  transform: scale(1.1);
+}
+
+.classtext {
+  width: 360px;
+  height: 180px;
+  background-color: #f4f0f0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  position: absolute;
+  left: 50px;
+  bottom: -130px;
+}
+
+/* .classtext .pm{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 200px;
+  /* } */
+.costt {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.costt .heart{
+  color: #a24d38;
+  font-size: 30px;
+}
+
+
+.costt .btn2 {
+  width: 32px;
+}
+
+@media (max-width: 375px) {
+  .class_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .classCard {
+    position: relative;
+    /* width: calc(22% -90px); */
+    width: 100%;
+    height: 300px;
+    margin: 30px 0px;
+  }
+  .classimgs {
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .classtext {
+    width: 280px;
+    height: 180px;
+    background-color: #f4f0f0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1000%;
+    position: absolute;
+    left: 19px;
+    bottom: -19px;
+  }
+  .costt {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-s {
+    height: 32px;}    
+}
+.class_cart{
+  cursor: pointer;
+}
+.heart{
+  cursor: pointer;
+}
+
+/* 換頁選取 */
+.muibox_root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.muibox_icon {
+  width: 32px;
+  height: 32px;
+  background-color: #cbac8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.muibox_form {
+  width: 32px;
+  height: 32px;
+  border: 1px solid floralwhite;
+  border-radius: 5px;
+  text-align: center;
+  cursor:pointer;
+}
+
+.muibox_form.active{
+  background-color: rgba(0, 0, 0, 0.322);
+  color: white;
+}

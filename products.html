@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2-Decochef</title>
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">   
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css settings -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/products.css">
+    <link rel="stylesheet" href="./style/products-main.css">
+    
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="primary">
+        <div class="container">
+            <div class="row">
+                <div class="hamburgerbox">
+                    <i class="fa-solid fa-bars" id="hamburger"></i>
+                </div>
+                <div class="logobox">
+                    <a href="#home"><img src="./imgs/logo.svg" alt="" class="logo"></a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Stores</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                    </ul>
+                </nav>
+                <div class="iconbox">
+                    <ul class="icons">
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href=""><i class="fa-sharp fa-solid fa-magnifying-glass" id="searchicon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+</header>
+    <div class="dropdown">
+        <div class="container">
+            <ul id="m-menu ">
+                <div class="row spc-center">
+                    <input class="m-menu-search" type="text" name="search" id="searchbox" placeholder="想在Decochef尋找什麼呢？">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" id="m-menu-searchbtn"></i>
+                </div>
+                <h4 class="m-menu-item-1">Menu</h4>
+                <li class="m-menu-item"><a href="" ><h3>About Us 關於我們</h3></a></li>
+                <li class="m-menu-item"><a href="" ><h3>News 最新消息</h3></a></li>
+                <li class="m-menu-item"><a href="" ><h3>Class 體驗課程</h3></a></li>
+                <li class="m-menu-item"><a href="" ><h3>Products 購物商城</h3></a></li>
+                <li class="m-menu-item"><a href="" ><h3>Lifestyle 品味誌</h3></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown-search">
+        <div class="container">
+            <div class="row spc-center">
+                <input type="text" name="search" id="searchbox" placeholder="想在Decochef尋找什麼呢？">
+                <i class="fa-sharp fa-solid fa-magnifying-glass" id="searchbtn"></i>
+            </div>
+        </div>
+    </div>
+<!-- navbar -->
+
+<div class="special-select">
+  <div class="container">
+    <div class=" special-select-title"><h3>Decochef 精選商品</h3></div>
+    <div class="carousel">
+        <div class="carousel-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt=""></div>
+        <div class="carousel-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt=""></div>
+        <div class="carousel-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt=""></div>
+        <div class="carousel-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt=""></div>
+    </div>
+  </div>
+    
+</div>
+
+
+   <!-- --篩選-- -->
+    
+    
+    
+
+
+    <div class="dragleft">
+        <div class="filter-function">
+            <div class="filter-top">
+                <p class="back"><i class="fa-solid fa-chevron-left"></i> 返回</p>
+            <p>篩選</p>
+            <p>清除全部</p>
+            </div>
+            <div id="m-dragleft-menu ">
+                <ul>
+                    <li class="m-dragleft-menu-item filter-for-function"><a href="" ><h6 class=" filter-for-function">功能</h6></a>
+                        <div class="container">
+                            <ul class="m-menu-cate ">
+                                <li class="m-menu-item"><a href="" ><h3>咖啡機</h3></a></li>
+                                <li class="m-menu-item"><a href="" ><h3>快煮壺</h3></a></li>
+                                <li class="m-menu-item"><a href="" ><h3>電烤盤</h3></a></li>
+                                <li class="m-menu-item"><a href="" ><h3>氣炸鍋</h3></a></li>
+                                <li class="m-menu-item"><a href="" ><h3>烤箱</h3></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="m-dragleft-menu-item"><a href="" ><h6>金額</h6></a></li>
+                    <li class="m-dragleft-menu-item"><a href="" ><h6>顏色</h6></a></li>
+                    <li class="m-dragleft-menu-item"><a href="" ><h6>品牌</h6></a></li>
+                    
+                </ul>
+                <button> 顯示123個商品</button>
+            </div>
+
+            
+            
+        </div>
+        
+        
+    </div>
+
+   <!-- --篩選-- -->
+ 
+    <!-- 側邊攔 -->
+    
+    <div class="wrapper ">
+        <div class="container">
+            <!-- 側邊攔 -->
+        <section class="wrapper-aside">
+            
+    <!-- 麵包屑 -->
+            <div class="breadscrumb">
+              <div><a href=""><i class="fa-solid fa-house"></i></a></i> <i class="fa-solid fa-angle-right"></i> <a href="">電烤盤</a>
+              </div>      
+            </div>
+            <div class="aside-list ">
+                <div class="aside-list-condition-1">
+                    <h6>推薦清單</h6>
+                    <a href="">熱銷TOP 10</a> <br>
+                    <a href="">站長推薦</a> <br>
+                    <a href="">最佳交換禮物清單</a>
+                </div>
+
+                <div class="aside-list-condition-2">
+                    <h6>篩選</h6>
+                    <div class="aside-list-item">
+                        <h6>功能</h6>
+                        <a href="">咖啡機</a>
+                        <a href="">快煮壺</a>
+                        <a href="">電烤盤</a>
+                        <a href="">氣炸鍋</a>
+                        <a href="">烤箱/麵包機</a>
+                        <a href="">熱壓吐司機</a>
+                        <a href="">電鍋</a>
+                        <a href="">炊飯機</a>
+                        <a href="">攪拌棒/研磨機/果汁機</a>
+                        <a href="">調理鍋</a>
+                        <a href="">其他餐廚家電</a>
+                    </div>
+                    <div class="aside-list-item">
+                        <h6>金額</h6>
+                        <div>
+                            <i class="fa-regular fa-circle-check"> NT$1,000 以下</i> <br>
+                            <i class="fa-regular fa-circle-check"> NT$1,000 - $3,000</i> <br>
+                            <i class="fa-regular fa-circle-check"> NT$3,000 - $5,000</i> <br>
+                            <i class="fa-regular fa-circle-check"> NT$5,000 - $7,000</i> <br>
+                            <i class="fa-regular fa-circle-check"> NT$7,000 以上</i>
+                        </div>
+                        
+                    </div>
+                    <div class="aside-list-item">
+                        <h6>顏色</h6>
+                    </div>
+                    <div class="aside-list-item">
+                        <h6>品牌</h6>
+                        <a href="">TOFFY</a>
+                        <a href="">BALMUDA</a>
+                        <a href="">Recolte</a>
+                        <a href="">One-meter</a>
+                        <a href="">Giaretti</a>
+                        <a href="">Siroca</a>
+                        <a href="">MATURE</a>
+                        <a href="">mosh!</a>
+                        <a href="">Iris Ohyama</a>
+                        <a href="">Sengoku Aladdin</a>
+                    </div>
+                </div>
+            
+                
+            
+            </div>
+        
+        </section>
+        <!-- 側邊攔 -->
+        <!-- 商品列表 -->
+        <section class="wrapper-content">
+            <div class="wrapper-content-top">
+                
+                <div class="filter-area ">
+                    <div  class="filter-bar ">
+                        <div class="filterbox">
+                            <a class="filterboxbt" href="" ><i class="fa-solid fa-filter"></i> 篩選商品
+                            </a>
+                        </div>
+                        
+                        <!-- https://kknews.cc/zh-tw/code/5nny588.html -->
+                        <div class="drop"> 
+                            <a class="dropbt">
+                                <i class="fa-solid fa-arrow-down-wide-short">
+                                </i>排序
+                            </a>
+                            <div class="dropbox"> 
+                               <a href="#">熱門程度優先</a> 
+                               <a href="#">最新上架優先</a> 
+                               <a href="#">價格由高至低</a>
+                               <a href="#">價格由低至高</a> 
+                           </div> 
+                       </div> 
+            
+                    </div>
+                    <!-- <span class="filter-botton" >
+                        "篩選商品"
+                        " ( "
+                        "0"
+                        " ) "
+                        ::after
+                    </span> -->
+                    
+                    
+            
+                </div>
+                <div class=""><p>找到 '123' 件電烤盤商品</p></div>
+
+            </div>
+
+            <div class="products-list ">
+            
+
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                        <div class="save-btn"><i class="fa-regular fa-heart"></i></div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <div class="products-list-item">
+                    <div class="img_cover">
+                        <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                    </div>
+                    <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                    <p>$2,980元</p>
+                </div>
+                <!-- 換頁btn -->
+                
+                <div class="p_muibox_root">
+                    <a href="" class="p_muibox_icon">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <form action="">
+                      <input type="text" class="p_muibox_form" placeholder=" 1 " />
+                    </form>
+                    <a href="" class="p_muibox_icon">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <span>共10頁</span>
+                  </div>
+                
+                <!-- 換頁btn -->
+            </div>
+        </section>
+        <!-- 商品列表 -->
+
+        </div>
+        
+    </div>
+        <!-- 其他人也在看 -->
+    <section class="also-like">
+        <div class="">
+            <h6>其他人也在看</h6>
+        <div class="others-scroll ">
+        
+            <div class="others-group">
+                <div class="others-group-photo ">
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/118beb9d670242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/115cebb9d00242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt="" style="height: 100px;"></div>
+                </div>
+                <div class="others-group-title">
+                    <p>快煮壺</p>
+                </div>
+            </div>
+            <div class="others-group">
+                <div class="others-group-photo ">
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/118beb9d670242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/115cebb9d00242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt="" style="height: 100px;"></div>
+                </div>
+                <div class="others-group-title">
+                    <p>電子鍋</p>
+                </div>
+            </div>
+            <div class="others-group">
+                <div class="others-group-photo ">
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/118beb9d670242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/115cebb9d00242ac110003.jpg" alt="" style="height: 100px;"></div>
+                 <div class="others-group-photo-item"><img src="imgs/products-imgs/11bfebad2e0242ac110004.jpg" alt="" style="height: 100px;"></div>
+                </div>
+                <div class="others-group-title">
+                    <p>氣炸鍋</p>
+                </div>
+            </div>
+            
+        </div>
+
+        </div>
+         
+    </section>
+    
+
+    <!-- 與此商品相似 -->
+    <section class="div-recomm-list">
+        <div class="">
+            <p>與此商品相似</p>
+        <div class="recomm-list ">
+        
+            <div class="recomm-list-item">
+                <div class="img_cover">
+                    <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                </div>
+                    <div class="save-btn"><i class="fa-regular fa-heart"></i></div>
+                <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                <p>$2,980元</p>
+            </div>
+            <div class="recomm-list-item">
+                <div class="img_cover">
+                    <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                </div>
+                    <div class="save-btn"><i class="fa-regular fa-heart"></i></div>
+                <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                <p>$2,980元</p>
+            </div>
+            <div class="recomm-list-item">
+                <div class="img_cover">
+                    <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                </div>
+                    <div class="save-btn"><i class="fa-regular fa-heart"></i></div>
+                <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                <p>$2,980元</p>
+            </div>
+            
+            <div class="recomm-list-item">
+                <div class="img_cover">
+                    <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                </div>
+                <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                <p>$2,980元</p>
+            </div>
+            <div class="recomm-list-item">
+                <div class="img_cover">
+                    <img src="imgs/products-imgs/7C6D7E2F33-SP-7909829.jpg" alt="">
+                </div>
+                <h6>【BRUNO】多功能電烤盤 (白色)</h6>
+                <p>$2,980元</p>
+            </div>
+            
+            
+            
+        </div>
+
+        </div>
+        
+    </section>
+<!-- footer -->
+<section class="category">
+    <div class="container">
+        <div class="wrap">
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">氣炸鍋<br>Air Fryer</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">電烤盤<br>Electric Griddle</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">熱壓機<br>Sandwich Toasters</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">調理鍋<br>Electric Pot</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">烤箱/麵包機<br>Oven</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">電子壓力鍋<br>Electric Cooker</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">咖啡機<br>Coffee Machine</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">快煮壺<br>Electric Kettle</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">果汁機<br>Juicer</p></a>                        
+            </div>
+            <div class="cate">
+                <a href="">
+                <div class="imicon"></div></a>
+                <a href=""><p class="">炊飯器<br>Rice Cooker</p></a>                        
+            </div>
+                <div class="cate">
+                    <a href="">
+                    <div class="imicon"></div></a>
+                    <a href=""><p class="">其他<br>Others</p></a>                        
+                </div>
+                <div class="cate shhu">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="fl">
+                <div class="logobox">
+                    <img src="./imgs/logo.svg" alt="" class="w75">
+                </div>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="fr row spc-evenly ps">
+                        <div class="sitemap">
+                            <ul>
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">最新消息</a></li>
+                                <li><a href="">體驗課程</a></li>
+                                <li><a href="">商品列表</a></li>
+                                <li><a href="">品味誌</a></li>
+                            </ul>
+                        </div>
+                        <div class="sitemap">
+                            <ul>
+                                <li><a href="">查詢</a></li>
+                                <li><a href="">購物車</a></li>
+                                <li><a href="">會員中心</a></li>
+                                <li><a href="">服務條款</a></li>
+                                <li><a href="">隱私權保護政策</a></li>
+                            </ul>
+                        </div>
+                    <div class="contactus white">
+                        <h6>DECOCHEF Co.,Ltd.</h6>
+                        <p>公司地址: 台北市大安區復興南路一段390號</p>
+                        <p>連絡電話: 02-5632-2354</p>
+                        <p>傳真專線: 02-5563-2333</p>
+                        <p>聯絡信箱: serve@decochef.com</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div >
+            <p class="ps white">Copyright © DECOCHEF All Rights Reserved. Designed by DECOCHEF.</p>
+        </div>
+    </div>
+</div>    
+<!-- footer -->
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+        // navlist
+        $('#hamburger').click(function (e) {
+            e.preventDefault();
+            $('#hamburger').toggleClass('active');
+            $('.dropdown').slideToggle(1000);
+            $('.dropdown-search').css("display", "none");
+        });
+        $('#searchicon').click(function (e) {
+            e.preventDefault();
+            $('#searchicon').toggleClass('active');
+            $('.dropdown-search').slideToggle(500);
+            $('.dropdown').css("display", "none");
+        });
+
+
+        // --篩選--
+        $('.filterbox').click(function (e) {
+            e.preventDefault();
+            $('.filter-function').addClass('dragleft-open')            
+        });
+
+        $('.back').click(function(){
+            console.log('hi')
+            $('.filter-function').removeClass('dragleft-open')
+            $('.filter-function').addClass('dragleft-closing')
+            
+        })
+
+        // -----條件篩選----
+        
+
+        $('.filter-for-function').click(function (e) {
+            e.preventDefault();
+            console.log('hello')
+            // $('.filter-for-function').toggleClass('active');
+            $('.m-menu-cate').slideToggle(500);
+            $('.m-menu-cate').css("display", "none");
+        });
+
+        // --篩選--
+
+        
+</script>
+<!-- script -->    
+</body>
+</html>

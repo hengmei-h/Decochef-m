@@ -1,0 +1,60 @@
+@media (max-width: 375px) {
+.card-middle{
+display: none;
+}  
+.card-end{
+display: block;
+}
+.finish_stickeres{
+    width: 18% !important;
+    top: 325px;
+    position: absolute;
+    left: 133px;
+}
+.card_four {
+    top: -172px;
+    position: absolute;
+    left: 14px;
+}
+.inputboxed{
+    top: -172px;
+    position: absolute;
+    left: 14px;
+}
+.inputboxed {
+    top: -102px;
+    position: absolute;
+    left: 28px;
+}
+.deared {
+    font-size: 13px;
+    display: block;
+    background: #8562529c;
+    width: 45%;
+    height: 50%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px;
+  }
+  .pleaseed {
+    display: block;
+    background: #f1ece6;
+    line-height: 50px;
+    padding-bottom: 90px;
+    width: 214px;
+    height: 64px;
+    border-radius: 3px;
+    border: 0.2px solid #85625240;
+    padding-top: 8px;
+}
+.card-end{
+height: 665px;
+}
+.paper_left {
+    margin: auto;
+    margin-top: 50px;
+    background: #b99e8d;
+    width: 326px;
+    height: 558px;
+}
+}

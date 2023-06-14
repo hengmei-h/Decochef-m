@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Serif TC', serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.wrapper{
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  background:#CBAC8D;
+
+}
+
+.game-details{
+  color:#ffffff; 
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board{
+  width: 100%;
+  height: 100%;
+  background: #ecceb0;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30,1fr);
+}
+.play-board .food{
+  background: #F2614C;
+}
+.play-board .head{
+  background: #3A2D27;
+}
+.controls{
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  text-align: center;
+  color: #ffffff;
+  padding: 25px 0;
+  margin: auto 0px;
+  width: calc(100% / 4);
+  cursor: pointer;
+  font-size: 1.3rem;
+  border-right: 2px solid #ecceb0;
+}
+
+
+@media (max-width:375px){
+  .wrapper{
+    width: 90vmin;
+    height: 115vmin;
+  }
+  
+  .game-details{
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  
+  .controls{
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+} */
+/* ----------------------------- */
+
+/* body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:transparent;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 200px;
+}
+.grid{
+  width: 300px;
+  height: 300px;
+  border: none;
+  box-shadow: 0 4px 8px 0 #ecceb0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  background: #ecceb0 ;
+}
+.grid div{
+  width: 20px;
+  height: 20px; 
+  box-sizing: border-box;
+}
+.secondary{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.score{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score p{
+  color: #fff;
+  font-size: 26px;
+}
+.score .scoreDisplay{
+  color: #fff;
+  font-size: 26px;
+
+}
+.popup{
+  background: #ecceb0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.popup button{
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background: #CBAC8D;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 500ms;
+  
+}
+.popup button:hover{
+  background:#a8896a;
+  transition: 500ms;
+  
+}
+.button button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #CBAC8D;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 28px;
+  border: 1px solid #fff;
+  transition: 500ms;
+  
+}
+.button button:hover{
+  background: #a8896a;
+  transition: 500ms;
+}
+.button .btn{
+  display: flex;
+}
+.button .top{
+  margin-left: 75px;
+}
+.button .butttom{
+  margin-left: 75px;
+}
+.snake{
+  background: #f7f7f7;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.apple{
+  background: #CBAC8D;
+  border-radius: 30px;
+  border: 1px solid red;
+} */
+
+
+
+/* ------------------------------ */
+
+
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  --size: 15px;
+  --color: #CBAC8D;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Serif TC', serif;
+  color: var(--color);
+  background-color: transparent;
+  /* background: linear-gradient(
+    162deg,
+    rgba(255, 133, 133, 1) 0%,
+    rgba(227, 84, 95, 1) 100%
+  ); */
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 0.8em;
+}
+
+@media (min-height: 425px) {
+  body {
+    --size: 25px;
+  }
+
+  footer {
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--size) * 17);
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  grid-template-rows: repeat(15, auto);
+  border: var(--size) solid var(--color);
+}
+.tile {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 20px;
+  max-width: calc(var(--size) * 17);
+  text-align: center;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+#youtube,
+#youtube-card {
+  display: none;
+}
+/* 
+@media (min-height: 425px) {
+
+  #youtube {
+    z-index: 2;
+    display: block;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 50% / 11%;
+    transform: scale(0.8);
+    transition: transform 0.5s;
+  }
+
+  #youtube:hover,
+  #youtube:focus {
+    transform: scale(0.9);
+    background: red;
+  }
+
+  #youtube::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7.5%;
+    left: -6%;
+    width: 112%;
+    height: 85%;
+    background: white;
+    border-radius: 9% / 50%;
+  }
+
+  #youtube:hover::before,
+  #youtube:focus::before {
+    background: red;
+  }
+
+  #youtube::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 45px;
+    height: 30px;
+    border: 15px solid transparent;
+    box-sizing: border-box;
+    border-left: 30px solid #ff8585;
+  }
+
+  #youtube:hover::after,
+  #youtube:focus::after {
+    border-left: 30px solid white;
+  }
+
+  #youtube span {
+    font-size: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #youtube:hover + #youtube-card {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    padding: 25px 130px 25px 25px;
+    width: 300px;
+    background-color: white;
+  }
+} */

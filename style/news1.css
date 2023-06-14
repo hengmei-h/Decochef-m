@@ -1,0 +1,431 @@
+/* section1-輪播牆--------------------- */
+.newsKv{
+    /* width: 1096px; */
+    min-height: 90vh;
+    padding:150px 0;
+}
+/* yutobe輪播牆*/
+.newsKvcontent{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+/* 輪播牆容器的樣式 */
+ul.slides{
+  position: relative;
+  width:1200px;
+  height:620px;
+  border-radius: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* 單張圖的樣式 */
+li.slide {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 120px;
+  color: #fff;
+  transition: .2s transform ease-in-out;
+  object-fit: cover;
+  /* animation: carousel 50s infinite; */
+  cursor: pointer;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  /* 66.6% {
+    transform: translateX(-100%);
+  } */
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.newsKvtitle{
+  margin-bottom: 80px;
+}
+
+.slideCard{
+  width:470px ;
+  height:240px ;
+  background-color: #fff;
+  /* background: url(/imgs/news1/Exclude.png); */
+  color:black;
+  padding: 15px 30px;
+  border-radius: 0px 50px;
+  position:absolute;
+  left:0px;
+  bottom: 0px;
+}
+
+/* 設定選擇器圖片 */
+.slide:nth-of-type(1){
+  background:url(../imgs/news1/newsKv/GI04061.webp)6px -300px no-repeat;
+  background-size: cover;
+}
+
+.slide:nth-of-type(2){
+  background:url(../imgs/news1/newsKv/unsplash_E0ylfF52C6M.jpg) no-repeat ;
+  background-size: cover;
+  left: 100%;
+}
+
+.slide:nth-of-type(3){
+  background:url(../imgs/news1/newsKv/unsplash_s86WhGhp25Y.jpg) no-repeat ;
+  background-size: cover;
+  left: 200%;
+}
+
+input[type='radio'] {
+  position: relative;
+  left: 100px;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible{
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  left: 1100px;
+  cursor: pointer;
+  /* text-align: center; */
+}
+
+.controls-visible label{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+
+
+
+.slides input[type='radio']:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
+  background-color: #cbac8d;
+}
+.slides input[type='radio']:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
+  background-color: #cbac8d;
+}
+.slides input[type='radio']:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3){
+  background-color: #cbac8d;
+}
+/* 輪播圖切換功能 */
+.slides input[type="radio"]:nth-of-type(1):checked ~.slide{
+  transform: translateX(0%);
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~.slide{
+  transform: translateX(-100%);
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~.slide{
+  transform: translateX(-200%);
+}
+
+@media screen and (max-width:375px){
+  .slide:nth-of-type(1){
+    background:url(../imgs/news1/newsKv/GI04061.webp)2px -82px no-repeat;
+    background-size: cover;
+  }
+  .newsKvtitle{
+    margin: 40px;
+  }
+
+  .newsKvtitle h2{
+    font-size: 32px;
+  }
+  .newsKv{
+    /* width: 1096px; */
+    min-height:50vh;
+    margin: auto;
+    padding:50px 0;
+}
+  ul.slides{
+    width:350px;
+    height:190px;
+    border-radius:25px;
+  }
+  .slideCard{
+    width:120px ;
+    height:75px ;
+    color:black;
+    border-radius: 0px 24px;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    padding:5px;
+  }
+  li.slide{
+    animation: carousel 25s infinite;
+  }
+  
+}
+
+
+
+
+
+/* section2-新聞頁面-------------- */
+.news{
+    background:url(../imgs/news1/newsBg-1.jpg) #403d3d67;
+}
+
+/* chatgpt動畫背景 */
+.bg-section{
+    width: 100%;
+    height: 1980px;
+    background-size: cover;
+    background-position: center center;
+    animation: backgroundAnimation 12s linear infinite;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-image: url(../imgs/news1/newsBg-1.jpg);
+    }
+    25% {
+      background-image: url(../imgs/news1/newsBg-2.jpg);
+    }
+    50% {
+      background-image: url(../imgs/news1/newsBg-3.jpg);
+    }
+    75% {
+      background-image: url(../imgs/news1/newsBg-4.jpg);
+    }
+    100% {
+      background-image: url(../imgs/news1/newsBg-1.jpg);
+    }
+  }
+
+  .bg-section::before {
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height:1980px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    color: white;
+  }
+  
+  
+
+/* 新聞標題+內容小卡 */
+.newstitle{
+    text-align: center;
+    padding: 50px 0 150px;
+}
+.newscontent{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 1096px;
+    /* height: 100%; */
+    margin: auto;    
+}
+
+.newsCard {
+    position: relative;
+    /* width: calc(22% -90px); */
+    width: 30%;
+    height: 300px;
+    margin: 100px 0px;
+  }
+  
+  .newsCard:hover .newstext{
+    box-shadow: 5px 5px 30px #e6e0df;
+  }
+
+.newsimgs {
+    width: 240px;
+    height: 170px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top:-150px;
+    left: -30px;   
+  }
+.newsimgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* transition: transform 0.3s ease; */
+  }
+.newsCard:hover .newsimgs img{
+    /* transform: scale(1.1); */
+  }
+  
+.newstext {
+    width: 260px;
+    height: 250px;
+    background-color: #f4f0f090;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  /* .newstext .pm{
+      padding: 5px;
+      margin: 5px;
+      border-radius: 5px;
+      text-align: center;
+      flex: 1 1 auto;
+      min-width: 200px;
+    /* } */
+
+  @media(max-width:375px) {
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding:0px 58px;
+      color: white;
+    }
+    .newstitle{
+      text-align: center;
+    }
+    .bg-section{
+      width: 100%;
+      height:4100px;
+      background-size: cover;
+      background-position: center center;
+      animation: backgroundAnimation 12s linear infinite;
+    }
+    .bg-section::before {
+      content: "";
+      position: absolute;
+      /* top: 0; */
+      left: 0;
+      width: 100%;
+      height:4100px;
+      background-color: rgba(0, 0, 0, 0.485);
+    }
+    .newscontent{
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-content:space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      /* height: 100%; */
+      margin: 0;    
+    }
+    .newsCard {
+      position: relative;
+      /* width: calc(22% -90px); */
+      width: 100%;
+      height:250px;
+      margin: 80px;
+    }
+    .newsimgs {
+      width: 240px;
+      height: 170px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: absolute;
+      left: -30px;
+      /* bottom: -19px; */
+    }
+    .newstext {
+      width: 260px;
+      height:200px;
+      background-color:#f4f0f05a;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      max-width: 1000%;
+ 
+    }
+    .cost {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  /* 換頁選取 */
+  .muibox_root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:-30px auto;
+    cursor:pointer;
+
+    /* padding-bottom: 150px; */
+  }
+  .muibox_icon {
+    width: 32px;
+    height: 32px;
+    background-color: #cbac8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  .muibox_form {
+    width: 32px;
+    height: 32px;
+    border: 1px solid floralwhite;
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+
+  }
+  .muibox_form.active{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+  }
+
+  @media(max-width:375px){
+    .muibox_root {
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      align-items: center;
+      /* margin: 100px auto; */
+    }
+  }
+
+

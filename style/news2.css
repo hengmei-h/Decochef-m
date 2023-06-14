@@ -1,0 +1,53 @@
+/* 新聞內文 */
+.news_intro{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 150px  auto  100px;
+}
+
+.title_all {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 50px;
+  
+  }
+  .title_h4 {
+    color: #856252;
+  }
+  .news_title {
+    background-color: rgba(203, 172, 141, 1);
+    padding: 10px;
+    border-radius: 50px;
+  }
+  .news2_img{
+    width:735px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 50px;
+  }
+  .news2_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .news_text{
+    width: 735px;
+    height: auto;
+  }
+
+  @media (max-width: 375px) {
+    .news2_img{
+        width:350px;
+        height:200px;
+        overflow: hidden;
+        border-radius: 30px;
+        margin-bottom: 50px;
+      }
+      .news_text{
+        width: 350px;
+        height: auto;
+      }
+  }  
